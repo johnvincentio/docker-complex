@@ -18,7 +18,7 @@ after_success:
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub
-  - docker push stephengrider/complex-client
-  - docker push stephengrider/complex-nginx
-  - docker push stephengrider/complex-server
-  - docker push stephengrider/complex-worker
+  - docker push johnvincentio/complex-client
+  - docker push johnvincentio/complex-nginx
+  - docker push johnvincentio/complex-server
+  - docker push johnvincentio/complex-worker
